@@ -89,13 +89,16 @@
     pointer-events: none;
     transition: opacity 0.3s ease;
   }
+  .him-her-wrap {
+    display: none;
+  }
   .wordmark {
-    font-size: clamp(16px, 2.2vw, 24px);
+    font-size: clamp(24px, 3.5vw, 42px);
     font-weight: 300;
-    letter-spacing: 0.32em;
+    letter-spacing: 0.28em;
     text-transform: uppercase;
     color: #F5F2EB;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   .tagline {
     font-size: 10px;
@@ -128,11 +131,13 @@
   .wrap.him-active .side-her { width: 0%; }
   .wrap.him-active .divider { left: 100%; }
   .wrap.him-active .centre { opacity: 0; pointer-events: none; }
+  .wrap.him-active .him-her-wrap { opacity: 0; pointer-events: none; }
 
   .wrap.her-active .side-her { width: 100%; }
   .wrap.her-active .side-him { width: 0%; }
   .wrap.her-active .divider { left: 0%; }
   .wrap.her-active .centre { opacity: 0; pointer-events: none; }
+  .wrap.her-active .him-her-wrap { opacity: 0; pointer-events: none; }
 
   .back-btn {
     display: none;
